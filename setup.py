@@ -5,13 +5,13 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="gptwc",
-    version="0.1.0",
-    author="Your Name",
-    author_email="your.email@example.com",
-    description="A package to count tokens in a text file using OpenAI's tiktoken library.",
+    version="1.0.0",
+    author="Lawrence Neal",
+    author_email="nealla@lwneal.com",
+    description="A package to count tokens in input text using OpenAI's tiktoken library.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/gptwc",
+    url="https://github.com/lwneal/gptwc",
     packages=find_packages(),
     install_requires=[
         "tiktoken",
