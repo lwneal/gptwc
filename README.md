@@ -24,11 +24,10 @@ options:
 Example Usage:
 
 ```
-$ cat README.md  | wc -w
-54
-
-$ cat README.md  | gptwc
-180
+$ cat README.md | wc -w
+185
+$ cat README.md | gptwc
+515
 
 
 $ curl -s 'https://gist.githubusercontent.com/phillipj/4944029/raw/75ba2243dd5ec2875f629bf5d79f6c1e4b5a8b46/alice_in_wonderland.txt' | wc -w
