@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="gptwc",
-    version="1.2.1",
+    version="1.2.2",
     author="Lawrence Neal",
     author_email="nealla@lwneal.com",
     description="A package to count tokens in input text using OpenAI's tiktoken library.",
