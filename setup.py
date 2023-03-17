@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="gptwc",
-    version="1.2.2",
+    version="1.2.3",
     author="Lawrence Neal",
     author_email="nealla@lwneal.com",
     description="A package to count tokens in input text using OpenAI's tiktoken library.",
@@ -16,12 +16,6 @@ setup(
     install_requires=[
         "tiktoken",
         "pyperclip",
-    ],
-    classifiers=[
-        "Development Status :: 3 - Alpha",
-        "Intended Audience :: Developers",
-        "License :: OSI Approved :: MIT License",
-        "Programming Language :: Python :: 3",
     ],
     python_requires=">=3.6",
     entry_points={
