@@ -1,8 +1,7 @@
 ## gptwc: wc for GPT tokens
 
-A simple utility for counting tokens.
 The `wc` utility counts words or characters. The `gptwc` utility functions similarly but counts tokens.
-Tokens are smaller than words but larger than characters.
+Tokens are smaller than words but larger than characters, and are a more compact representation of text used by large language models.
 
 Use `gptwc` to check the number of tokens in a string, in order to remain under the token limit (eg. 4097) for your large language model API. Uses `tiktoken`.
 
