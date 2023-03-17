@@ -10,7 +10,7 @@ def main():
     parser.add_argument("--files0-from", metavar="F", type=Path, help="Read input from the files specified by NUL-terminated names in file F")
     parser.add_argument("--model", default="text-davinci-003", metavar="MODEL", help="Model name to use for tokenization (default: text-davinci-003)")
     parser.add_argument("-c", "--clipboard", action="store_true", help="Read input from the system clipboard")
-    parser.add_argument("--version", action="version", version="%(prog)s 1.1.0")
+    parser.add_argument("--version", action="version", version="%(prog)s 1.2.1")
 
     args = parser.parse_args()
 
