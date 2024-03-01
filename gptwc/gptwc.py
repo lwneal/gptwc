@@ -21,7 +21,7 @@ def main():
     parser.add_argument("--files0-from", metavar="F", type=Path, help="Read input from the files specified by NUL-terminated names in file F")
     parser.add_argument("--model", default="cl100k_base", metavar="MODEL", help="Encoding or model to use for tokenization (default: cl100k_base, which is used by GPT-3.5 and GPT-4)")
     parser.add_argument("-c", "--clipboard", action="store_true", help="Read input from the system clipboard")
-    parser.add_argument("--version", action="version", version="%(prog)s 1.2.5")
+    parser.add_argument("--version", action="version", version="%(prog)s 1.2.6")
     args = parser.parse_args()
 
     if args.files0_from:
