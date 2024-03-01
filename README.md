@@ -56,7 +56,7 @@ positional arguments:
 options:
   -h, --help       show this help message and exit
   --files0-from F  Read input from the files specified by NUL-terminated names in file F
-  --model MODEL    Model name to use for tokenization (default: text-davinci-003)
+  --model MODEL    Model name to use for tokenization (default: gpt-4)
   -c, --clipboard  Read input from the system clipboard
   --version        show program's version number and exit
 ```
