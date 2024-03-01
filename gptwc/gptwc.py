@@ -14,9 +14,9 @@ def main():
     parser = argparse.ArgumentParser(description="Count tokens in text files using OpenAI's tiktoken library.")
     parser.add_argument("files", metavar="FILE", nargs="*", type=Path, help="Text files to count tokens in")
     parser.add_argument("--files0-from", metavar="F", type=Path, help="Read input from the files specified by NUL-terminated names in file F")
-    parser.add_argument("--model", default="text-davinci-003", metavar="MODEL", help="Model name to use for tokenization (default: text-davinci-003)")
+    parser.add_argument("--model", default="cl100k_base", metavar="MODEL", help="Model name to use for tokenization (default: cl100k_base)")
     parser.add_argument("-c", "--clipboard", action="store_true", help="Read input from the system clipboard")
-    parser.add_argument("--version", action="version", version="%(prog)s 1.2.2")
+    parser.add_argument("--version", action="version", version="%(prog)s 1.2.5")
     args = parser.parse_args()
 
     if args.files0_from:
