@@ -39,14 +39,21 @@ def main():
         print(token_count(input_text, encoding))
     else:
         total = 0
+        did_error = False
         for file_path in args.files:
-            with file_path.open("r", encoding="utf-8") as input_file:
-                input_text = input_file.read()
-                count = token_count(input_text, encoding)
-                total += count
-                print(f"{count} {file_path}")
+            input_text = ""
+            try:
+                with file_path.open("r", encoding="utf-8") as input_file:
+                    input_text = input_file.read()
+            except (OSError, UnicodeDecodeError) as e:
+                print(f"gptwc: {file_path}: {e}", file=sys.stderr)
+                did_error = True
+            count = token_count(input_text, encoding)
+            total += count
+            print(f"{count} {file_path}")
         if len(args.files) > 1:
             print(f"{total} total")
+        sys.exit(1 if did_error else 0)
 
 if __name__ == "__main__":
     main()
