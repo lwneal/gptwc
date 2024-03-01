@@ -38,11 +38,15 @@ def main():
         input_text = sys.stdin.read()
         print(token_count(input_text, encoding))
     else:
+        total = 0
         for file_path in args.files:
             with file_path.open("r", encoding="utf-8") as input_file:
                 input_text = input_file.read()
                 count = token_count(input_text, encoding)
+                total += count
                 print(f"{count} {file_path}")
+        if len(args.files) > 1:
+            print(f"{total} total")
 
 if __name__ == "__main__":
     main()
