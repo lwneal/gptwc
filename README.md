@@ -66,6 +66,7 @@ options:
 From [tiktoken/model.py](https://github.com/openai/tiktoken/blob/main/tiktoken/model.py)
 
 ```
+"gpt-4o": "o200k_base",
 "gpt-4": "cl100k_base",
 "gpt-3.5-turbo": "cl100k_base",
 "text-embedding-ada-002": "cl100k_base",
