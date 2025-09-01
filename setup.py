@@ -14,7 +14,7 @@ setup(
     url="https://github.com/lwneal/gptwc",
     packages=find_packages(),
     install_requires=[
-        "tiktoken>=0.7.0",
+        "tiktoken>=0.11.0",
         "pyperclip",
     ],
     python_requires=">=3.6",
