@@ -19,7 +19,7 @@ def main():
     parser = argparse.ArgumentParser(description="Count tokens in text files using OpenAI's tiktoken library.")
     parser.add_argument("files", metavar="FILE", nargs="*", type=Path, help="Text files to count tokens in")
     parser.add_argument("--files0-from", metavar="F", type=Path, help="Read input from the files specified by NUL-terminated names in file F")
-    parser.add_argument("--model", default="o200k_base", metavar="MODEL", help="Encoding or model to use for tokenization (default: o200k_base, used by GPT-4o. Use cl100k_base for GPT-3.5 and GPT-4)")
+    parser.add_argument("--model", default="o200k_base", metavar="MODEL", help="Encoding or model to use for tokenization (default: o200k_base, used by GPT-5 and GPT-4o)")
     parser.add_argument("-c", "--clipboard", action="store_true", help="Read input from the system clipboard")
     parser.add_argument("--version", action="version", version="%(prog)s 1.2.6")
     args = parser.parse_args()
